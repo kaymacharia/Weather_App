@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the card container */
+.card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: pink;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Style the search container */
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style the search input */
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Style the search button */
+.search button {
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 0; /* Set the border-radius to 50% for a circular shape */
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+/* Style the weather information container */
+.weather {
+  text-align: center;
+}
+
+/* Style the weather icon */
+.Weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* Style temperature, city, and details */
+.temp {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.city {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Style the details columns */
+.col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Style the humidity and wind speed */
+.humidity,
+.wind {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style the image next to humidity and wind speed */
+.col img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+/* hide data*/
+.weather{
+    display: none;
+}
+/*error message 
+the display none is used to not display the error message on deault
+only when requested */
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
